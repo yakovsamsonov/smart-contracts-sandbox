@@ -21,7 +21,8 @@ contract SimpleStorage {
     //uint256[] public favoriteNumbersList
     People[] public people;
 
-    function store(uint256 _favoriteNumber) public {
+    // virtual keyword allows to override in child contract
+    function store(uint256 _favoriteNumber) virtual public {
         favoriteNumber = _favoriteNumber;
     }
 
